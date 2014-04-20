@@ -57,15 +57,17 @@ public class Contador {
 				if(file.isDirectory()&&!file.getName().equals(".gc")){
 					listarDirectorio(file,validarCopia);
 				}else{
-					File raizCopia = new File(file.getParent()+File.separator+".gc");
-					for (File fileCopia : raizCopia.listFiles()) {
-						if (evaluarExtencion(file,".java")){
-							claseVo = calcularClase(file);
-							if (claseVo != null)        
-								clases.add(claseVo);
+					if (file.getName().equals(".gc"))
+					{
+						File raizCopia = new File(file.getParent()+File.separator+".gc");
+						for (File fileCopia : raizCopia.listFiles()) {
+							if (evaluarExtencion(fileCopia,".java")){
+								claseVo = calcularClase(fileCopia);
+								if (claseVo != null)        
+									clases.add(claseVo);
+							}
 						}
 					}
-					
 				}
 			}
 		}

@@ -1,0 +1,3 @@
+#Sun Apr 20 11:09:33 COT 2014
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n<expression enabled\="true" text\="file.isDirectory()"/>\r\n<expression enabled\="true" text\="\!file.getName().equals(&quot;.gc&quot;)"/>\r\n<expression enabled\="true" text\="file.getName()"/>\r\n</watchExpressions>\r\n
+eclipse.preferences.version=1
