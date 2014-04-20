@@ -31,7 +31,7 @@ public class CopiaProyecto {
 	}
 	
 	/**
-	 * MÃ©todo encargado de copiar todo un directorio en uno nuevo
+	 * Método encargado de copiar todo un directorio en uno nuevo
 	 * @param path_p, Path del directorio a copiar
 	 * @param newPath_p, Path del nuevo directorio
 	 * @throws Exception

@@ -12,14 +12,14 @@ import co.edu.uniandes.tsp.geko.vo.Parte;
 public class Main {
 
 	/**
-	 * MÃ©todo inicial del programa
+	 * Método inicial del programa
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		int opcion = Main.presentaMenu();
 		
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("Ingrese la ubicaciÃ³n del folder del proyecto");
+		System.out.println("Ingrese la ubicación del folder del proyecto");
 		String rutaFolder = teclado.nextLine();
 		
 		Modelo modelo = new ModeloImpl();
@@ -43,7 +43,7 @@ public class Main {
 				
 				System.out.println("\tLineas eliminadas: "+parte.getCantidadLineasBorradas());
 				for(String texto:parte.getLineasEliminadas()){
-					System.out.println("\t\tPosiciÃ³n: "+texto);
+					System.out.println("\t\tPosición: "+texto);
 				}
 			}
 			
@@ -59,21 +59,21 @@ public class Main {
 				lineasProgramaCopia += claseVO.getNumeroLineas();
 			}
 			
-			//System.out.println("Total lÃ­neas programa original: "+lineasProgramaOriginal);
-			System.out.println("Total lÃ­neas programa copia: "+lineasProgramaCopia);
+			//System.out.println("Total líneas programa original: "+lineasProgramaOriginal);
+			System.out.println("Total líneas programa copia: "+lineasProgramaCopia);
 			
 		}else{
-			System.out.println("OpciÃ³n InvÃ¡lida!!!");
+			System.out.println("Opción Inválida!!!");
 		}
 	}
 	
 	/**
-	 * MÃ©todo que presenta el menÃº al usuario
+	 * Método que presenta el menú al usuario
 	 * @return opcion seleccionada
 	 */
 	private static int presentaMenu(){
 		int opcion = 0;
-		System.out.println("Digite la opciÃ³n que desea realizar:");
+		System.out.println("Digite la opción que desea realizar:");
 		System.out.println("1. Copiar proyecto");
 		System.out.println("2. Comparar proyecto");
 		Scanner teclado = new Scanner(System.in);

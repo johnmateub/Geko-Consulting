@@ -9,29 +9,29 @@ import co.edu.uniandes.tsp.geko.vo.Parte;
 public interface Modelo {
 
 	/**
-	 * MÃ©todo que copia fuentes del proyecto. Crea una carpeta .gc por cada folder del
+	 * Método que copia fuentes del proyecto. Crea una carpeta .gc por cada folder del
 	 * proyecto
 	 * @param ruta del proyecto
 	 */
 	public void copiarProyecto(String ruta);
 	
 	/**
-	 * MÃ©todo que recorre todo el proyecto para realizar la comparaciÃ³n
+	 * Método que recorre todo el proyecto para realizar la comparación
 	 * @param ruta del proyecto
 	 * @return Listado de Partes
 	 */
 	public List<Parte> recorrerProyecto(String ruta);
 	
 	/**
-	 * MÃ©todo que realiza la comparaciÃ³n de un archivo original y un archivo copia
+	 * Método que realiza la comparación de un archivo original y un archivo copia
 	 * @param parteOriginal
 	 * @param parteModificada
-	 * @return Parte con informaciÃ³n
+	 * @return Parte con información
 	 */
 	public Parte compararPartes(File parteOriginal, File parteModificada);
 	
 	/**
-	 * MÃ©todo que cuenta las lineas de codigo totales del programa
+	 * Método que cuenta las lineas de codigo totales del programa
 	 * @param rutaFolder
 	 * @param validarCopia
 	 * @return

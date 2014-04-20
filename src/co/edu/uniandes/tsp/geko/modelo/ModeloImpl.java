@@ -97,7 +97,7 @@ public class ModeloImpl implements Modelo{
 	}
 	
 	/**
-	 * M茅todo que realiza la comparaci贸n de l铆neas modificadas entre un archivo original y uno modificado
+	 * M閠odo que realiza la comparaci髇 de l韓eas modificadas entre un archivo original y uno modificado
 	 * @param original
 	 * @param revised
 	 * @return
@@ -131,7 +131,7 @@ public class ModeloImpl implements Modelo{
 	}
 	
 	/**
-	 * M茅todo que realiza la comparaci贸n de l铆neas insertadas entre un archivo original y uno modificado
+	 * M閠odo que realiza la comparaci髇 de l韓eas insertadas entre un archivo original y uno modificado
 	 * @param original
 	 * @param revised
 	 * @return
@@ -148,7 +148,7 @@ public class ModeloImpl implements Modelo{
             String linea = "";
 			for(Chunk change:insertsFromOriginal){
 				linea = "Linea "+(change.getPosition() + 1) +"";
-				linea += " Inserci贸n: ";
+				linea += " Inserci髇: ";
 				for(Object texto:change.getLines()){
 					linea += texto.toString();
 				}
@@ -163,7 +163,7 @@ public class ModeloImpl implements Modelo{
     }
 
 	/**
-	 * M茅todo que realiza la comparaci贸n de l铆neas eliminadas entre un archivo original y uno modificado
+	 * M閠odo que realiza la comparaci髇 de l韓eas eliminadas entre un archivo original y uno modificado
 	 * @param original
 	 * @param revised
 	 * @return
