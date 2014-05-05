@@ -16,13 +16,9 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		boolean flag = true;
-		while (flag)
+		while (true)
 		{
 			int opcion = Main.presentaMenu();
-			
-			if (opcion == 3)
-				System.exit(0);
 			
 			Scanner teclado = new Scanner(System.in);
 			System.out.println("Ingrese la ubicación del folder del proyecto");
@@ -68,6 +64,9 @@ public class Main {
 				//System.out.println("Total líneas programa original: "+lineasProgramaOriginal);
 				System.out.println("Total líneas programa copia: "+lineasProgramaCopia);
 				
+			}else if (opcion == 2)
+			{
+				System.exit(0);
 			}else{
 				System.out.println("Opción Inválida!!!");
 			}
@@ -83,7 +82,6 @@ public class Main {
 		System.out.println("Digite la opción que desea realizar:");
 		System.out.println("1. Copiar proyecto");
 		System.out.println("2. Comparar proyecto");
-		System.out.println("3. Salir");
 		Scanner teclado = new Scanner(System.in);
 		opcion = Integer.parseInt(teclado.nextLine());
 		return opcion;
